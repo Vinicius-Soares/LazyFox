@@ -15,16 +15,16 @@ public class GameController : MonoBehaviour
         TryGetComponent(out audioSource);
     }
 
-    public void ActivateVictoryPanel()
+    public void VictoryScene() 
     {
-        victoryPanel.SetActive(true);
+        SceneManager.LoadScene("VictoryScene");
         Time.timeScale = 0;
         audioSource.Stop();
     }
 
-    public void ActivateDefeatPanel()
+    public void DefeatScene()
     {
-        defeatPanel.SetActive(true);
+        SceneManager.LoadScene("DefeatScene");
         Time.timeScale = 0;
         audioSource.Stop();
     }
@@ -32,6 +32,12 @@ public class GameController : MonoBehaviour
     public void ReloadLevel()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("Gameplay");
+    }
+    
+    public void ReturnToMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
     }
 }

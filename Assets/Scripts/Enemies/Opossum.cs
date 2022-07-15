@@ -38,7 +38,7 @@ public class Opossum : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
-            FindObjectOfType<GameController>().ActivateDefeatPanel();
+            FindObjectOfType<GameController>().DefeatScene();
         }
     }
 }
