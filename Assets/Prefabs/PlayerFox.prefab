@@ -195,7 +195,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2.5
   m_Material: {fileID: 6200000, guid: 5bd22b5b3a15d0f448ade280617278a7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -226,8 +226,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  jumpForce: 9
-  forceOnFalling: 1.02
+  jumpForce: 12
+  forceOnFalling: 1
   fallingSpeedLimit: 10
 --- !u!114 &8065629814729945171
 MonoBehaviour:
